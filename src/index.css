@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+  @apply mx-[104px] mt-[27px] h-[1818px] ; 
+  
+}
+.card{
+    background: linear-gradient(
+      222.94deg,
+      #051a91 -4.31%,
+      #061c93 14.41%,
+      #2284f1 81.88%,
+      #1f80eb 103.81%
+    );
+  }
+  .number {
+    font-family: Lato;
+  }
+  
+
+  #tg-1:checked ~ .label-1,
+  #tg-2:checked ~ .label-2,
+  #tg-3:checked ~ .label-3, 
+  #tg-4:checked ~ .label-4, 
+  #tg-5:checked ~ .label-5 {
+    @apply text-[#06286E] border-b-2 font-bold border-[#06286E] transition ease-in-out delay-150;
+  }
+  
+  .card{
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+  }
+  
+  .front{
+    backface-visibility: hidden;
+  }
+  
+  .back{
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: linear-gradient(
+  220deg,
+  hsl(215deg 98% 16%) 0%,
+  hsl(215deg 86% 19%) 6%,
+  hsl(214deg 75% 22%) 12%,
+  hsl(213deg 64% 25%) 20%,
+  hsl(212deg 58% 29%) 28%,
+  hsl(208deg 58% 35%) 40%,
+  hsl(206deg 57% 41%) 57%,
+  hsl(202deg 57% 47%) 100%);
+    
+  
+  }
+  
+  .cardFlip{
+    transform: rotateY(180deg);
+   
+  }
+
+.flip{
+  transform: rotateX(180deg)
+}
+
